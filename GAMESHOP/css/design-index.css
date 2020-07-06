@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: #393e46;
+}
+
+.banner {
+  background-image: url(../images/gamewallpaper1.jpg);
+  width: 100%;
+  background-size: cover;
+  border-bottom: solid;
+}
+
+.banner-text{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15% 0;
+}
+
+.banner-text-items{
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.banner-text-items h2{
+  font-family: "Red Hat Text",sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.banner-text-items p{
+  font-size: 18px;
+  font-family: "Red Hat Text",sans-serif;
+  color: white;
+}
+
+.main-content{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 5% 0;
+}
+
+.main1{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 3%;
+  text-align: center;
+}
+
+.main1 h2{
+  font-family: "Red Hat Text",sans-serif;
+  color: #e43f5a;
+}
+
+.main1 p{
+  font-family: "Raleway",sans-serif;
+  color: white;
+}
