@@ -22,11 +22,6 @@
             <li><a href="../pages/merchandise.php">MERCHANDISE</a></li>
             <li><a href="../pages/videogames.php">VIDEO GAMES</a></li>
           </ul>
-          <div class="add-own-recipe">
-            <form action="../pages/add-own-recipe.php" method="post">
-              <button class="game-submit" type="submit">Add own game</button>
-            </form>
-          </div>
           <div class="logout">
             <form action="../pages/login.php" method="post">
               <button name="logout-submit" type="submit">Login</button>

@@ -25,14 +25,9 @@
             <li><a href="../pages/merchandise.php">MERCHANDISE</a></li>
             <li><a href="../pages/videogames.php">VIDEO GAMES</a></li>
           </ul>
-          <div class="add-own-recipe">
-            <form action="../pages/add-own-recipe.php" method="post">
-              <button class="game-submit" type="submit">Add own game</button>
-            </form>
-          </div>
           <div>
             <p class="session-name">
-              Hello, Gamer!:&nbsp;&nbsp;<?=$_SESSION['name'];?>
+              What's up, Gamer!?:&nbsp;&nbsp;<?=$_SESSION['name'];?>
             </p>
           </div>
           <div class="logout">
