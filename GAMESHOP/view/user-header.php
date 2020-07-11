@@ -1,5 +1,5 @@
 <?php
-  session_start();
+  require '../includes/connect.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
     <header>
       <nav>
         <img class="logo" src="../images/gameshoplogo.png" alt="logo" />
-        <form class="search" method="post" action="../pages/search-results.php">
+        <form class="search" method="post" action="../pages/results-page.php">
           <p class="search-text">
             Search for product:
           <input type="text" name="search-game" placeholder="Product Name" />

@@ -8,7 +8,8 @@ productId INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 productName VARCHAR(100) NOT NULL,
 productImg VARCHAR(200)NOT NULL,
 productPrice DECIMAL(19,2)NOT NULL,
-productCategory VARCHAR(100) NOT NULL
+productCategory VARCHAR(100) NOT NULL,
+productDescription TEXT(3000) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS users (

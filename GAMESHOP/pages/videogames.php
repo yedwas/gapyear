@@ -9,29 +9,27 @@
  </div>
 
  <?php
-  $sql = "SELECT * FROM products";
-  $result = mysqli_query($con, "SELECT * FROM products");
+
+  $result = mysqli_query($con, "SELECT * FROM products WHERE productCategory='videogame'");
 
   while ($row = mysqli_fetch_array($result)) {
-    echo "<div class ='game-box'>
+   echo "<div class='child-page-listing'>
+           <div class='grid-container'>
+              <article class='game-listing'>
+              <a href='game-page-videogame.php?name=".$row['productName']."'>
+             <p class='game-title'>
+             ".$row['productName']."
+             </p>
               <div class='game-image'>
-                  <img src=../images/".$row['productImg']." />
+             <img width='300' height='169' src=../includes/images/".$row['productImg']." />
               </div>
-              <div class='game-name'>
-                  <h1>".$row['productName']."</h1>
-              </div>
-              <div class='game-price'>
-                  <h2>".$row['productPrice']."</h2>
-              </div>
-              <div class='game-category'>
-                  <h2>".$row['productCategory']."</h2>
-              </div>
-           </div>";
-  }
-
-
-
-
+              </a>
+              </article>
+              <h2>Product Price: </h2> <p>".$row['productPrice']."</p>
+              <h2>Product Description: </h2> <p>".$row['productDescription']."</p>
+           </div>
+   </div>";
+ }
   ?>
 
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body{
   background-color: #393e46;
@@ -13,6 +14,16 @@ body{
   font-size: 50px;
   color: white;
   background-color: black;
+}
+
+.child-page-listing h2{
+  font-family: "Raleway",sans-serif;
+  color: #00adb5;
+}
+
+.child-page-listing p{
+  font-family: "Raleway",sans-serif;
+  color: white;
 }
 
 .child-page-listing {
@@ -35,22 +46,22 @@ img {
 
 
 /* hover styles */
-.recipe-listing {
+.game-listing {
   position: relative;
 }
 
-.recipe-image {
+.game-image {
   line-height: 0;
   overflow: hidden;
 }
 
-.recipe-image img {
+.game-image img {
   filter: blur(0px);
   transition: filter 0.3s ease-in;
   transform: scale(1.1);
 }
 
-.recipe-title {
+.game-title {
   font-size: 1.5em;
   font-weight: bold;
   text-decoration: none;
@@ -71,10 +82,10 @@ img {
   justify-content: center;
 }
 
-.recipe-listing:hover .recipe-title {
+.game-listing:hover .game-title {
   opacity: 1;
 }
 
-.recipe-listing:hover .recipe-image img {
+.game-listing:hover .game-image img {
   filter: blur(2px);
 }
