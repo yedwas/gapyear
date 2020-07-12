@@ -27,7 +27,7 @@
                 <h2>About the Item: </h2> <p>".$row['productDescription']."</p>
             </div>
             <div class='game-diff'>
-                <h2>Product Price: </h2> <p>".$row['productPrice']."</p>
+                <h2>Product Price: </h2> <p>$".$row['productPrice']."</p>
             </div>
         </div>";
  }
@@ -35,7 +35,7 @@
  ?>
 
  <form name="game-purchase" class="game-purchase" method="post" action="checkout.php">
-   <input type="number" name="product-quantity"/>
+   <input type="number" name="product-quantity" required/>
    <button type="submit" name="purchase-submit" class="purchase-submit">Purchase</button>
  </form>
 

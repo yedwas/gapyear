@@ -1,5 +1,9 @@
 <?php
   require "../view/user-header.php";
+
+  if (isset($_POST['purchase-submit'])) {
+    $_SESSION['product-quantity'] = $_POST['product-quantity'];
+  }
  ?>
 
 <title>Checkout</title>
