@@ -2,6 +2,7 @@
   require "../view/user-header.php";
  ?>
 
+<title>Checkout</title>
 <link rel="stylesheet" href="../css/design-checkout.css"/>
 
 <form class="payment-form" name="payment-form" method="post" action="checkout.php">

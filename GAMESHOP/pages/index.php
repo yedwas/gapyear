@@ -1,7 +1,7 @@
 <?php
   require "../view/user-header.php";
  ?>
-
+<title>Homepage</title>
 <link rel="stylesheet" href="../css/design-index.css">
 
 <div class="banner">

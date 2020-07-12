@@ -1,7 +1,7 @@
 <?php
   require "../view/user-header.php";
  ?>
-
+<title>Merchandise</title>
 <link rel="stylesheet" href="../css/design-merchandise.css"/>
 
  <div class="wrapper">

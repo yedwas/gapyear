@@ -2,7 +2,7 @@
   require "../view/user-header.php";
   $name = mysqli_real_escape_string($con, $_GET['name']);
  ?>
-
+<title>Merchandise</title>
 <link rel="stylesheet" href="../css/design-product-page.css"/>
 
  <div class="wrapper">

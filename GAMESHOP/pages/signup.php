@@ -1,7 +1,7 @@
 <head>
   <link rel="stylesheet" href="../css/design-signup.css" />
 </head>
-
+<title>Signup</title>
  <body>
    <div class="wrapper-main">
      <img class="logo" src="../images/gameshoplogo.png"/>

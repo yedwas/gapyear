@@ -27,7 +27,7 @@
           </ul>
           <div>
             <p class="session-name">
-              What's up, Gamer!?:&nbsp;&nbsp;<?=$_SESSION['name'];?>
+              Gamer:&nbsp;&nbsp;<?=$_SESSION['name'];?>
             </p>
           </div>
           <div class="logout">

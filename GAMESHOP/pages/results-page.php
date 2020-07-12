@@ -1,7 +1,7 @@
 <?php
   require "../view/user-header.php";
 ?>
-
+<title>Results</title>
 <link rel="stylesheet" href="../css/design-results.css"/>
 
 <div class="wrapper">

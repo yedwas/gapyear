@@ -1,7 +1,7 @@
 <?php
   require "../view/user-header.php";
  ?>
-
+<title>Videogame</title>
 <link rel="stylesheet" href="../css/design-videogames.css"/>
 
  <div class="wrapper">
