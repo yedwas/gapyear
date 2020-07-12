@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+  background-color: #393e46;
+}
+
+.wrapper h1{
+  font-family: "Red Hat Display",sans-serif;
+  text-align: left;
+  position: relative;
+  weight: 700;
+  top: 30px;
+  font-size: 50px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.game-box {
+  text-align: center;
+  position: relative;
+  top: 70px;
+  padding-bottom: 120px;
+}
+
+.game-box p{
+  font-family: "Raleway",sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.game-box h2, h1{
+  font-family: "Red Hat Display",sans-serif;
+  color: #00adb5;
+}
+
+.checkout-details {
+  text-align: center;
+  position: relative;
+  top: 70px;
+  padding-bottom: 120px;
+}
+
+.checkout-details p{
+  font-family: "Raleway",sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.checkout-details h2, h1{
+  font-family: "Red Hat Display",sans-serif;
+  color: #00adb5;
+}

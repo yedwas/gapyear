@@ -15,6 +15,7 @@
  $result = mysqli_query($con, "SELECT * FROM products WHERE productCategory='merchandise' AND productName='$name'");
 
  while ($row = mysqli_fetch_array($result)) {
+     $_SESSION['product-id'] = $row['productId'];
    echo "<div class='game-box'>
             <div class='game-image'>
                 <img src=../includes/images/".$row['productImg']." />
@@ -34,6 +35,7 @@
  ?>
 
  <form name="game-purchase" class="game-purchase" method="post" action="checkout.php">
+   <input type="number" name="product-quantity"/>
    <button type="submit" name="purchase-submit" class="purchase-submit">Purchase</button>
  </form>
 

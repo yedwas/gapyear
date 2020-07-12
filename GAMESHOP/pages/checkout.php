@@ -13,7 +13,7 @@
                   <button type="submit" name="method-confirm">Confirm Payment Method</button>
 </form>
 
-<form class="checkout-form" name="checkout-form" method="post">
+<form class="checkout-form" name="checkout-form" method="post" action="confirm-checkout.php">
 <?php
 if (isset($_POST['method-confirm'])) {
 
@@ -21,19 +21,19 @@ if (isset($_POST['method-confirm'])) {
 
   if ($_POST['payment-type'] == "Credit Card/Debit Card") {
 
- echo '<input type="text" name="Credit Card Number" placeholder="Credit Card Number" required/>
-       <input type="text" name="Expiration Date" placeholder="Expiration Date" required/>
+ echo '<input type="text" name="CCNumber" placeholder="Credit Card Number" required/>
+       <input type="text" name="ExpDate" placeholder="Expiration Date" required/>
        <input type="number" name="CVV" placeholder="CVV" required/>
        <br />
-       <input type="text" name="Shipping Address" placeholder="Shipping Address" required/>
+       <input type="text" name="ShipAddress" placeholder="Shipping Address" required/>
        <button type="submit" name="checkout-confirm">Confirm Checkout</button>';
-
+       $_SESSION['payment-type'] = $_POST['payment-type'];
     } else if ($_POST['payment-type'] == "Cash on Delivery"){
 
   echo '<br />
-        <input type="text" name="Shipping Address" placeholder="Shipping Address" required/>
+        <input type="text" name="ShipAddress" placeholder="Shipping Address" required/>
         <button type="submit" name="checkout-confirm">Confirm Checkout</button>';
-
+        $_SESSION['payment-type'] = $_POST['payment-type'];
     }
 }
 ?>
