@@ -62,12 +62,21 @@
             </div>
           </div>';
 
-    echo '<button type="submit" href=success-checkout.php>Confirm</button>
-          <button type="submit" href=index.php>Cancel</button>';
+    // echo '<button type="submit" href=success-checkout.php>Confirm</button>
+    //       <button type="submit" href=index.php>Cancel</button>';
 
   }
 
+
 ?>
+
+<form name="game-purchase" class="game-purchase" method="post" action="index.php">
+  <button type="submit" name="purchase-submit" class="purchase-submit">Confirm</button>
+</form>
+
+<form name="game-purchase" class="game-purchase" method="post" action="game-page.php">
+  <button type="submit" name="purchase-submit" class="purchase-submit">Go Back</button>
+</form>
 
 <?php
    require "../view/footer.php";
