@@ -70,7 +70,7 @@
 
 ?>
 
-<form name="game-purchase" class="game-purchase" method="post" action="index.php">
+<form name="game-purchase" class="game-purchase" method="post" action="success-checkout.php">
   <button type="submit" name="purchase-submit" class="purchase-submit">Confirm</button>
 </form>
 
