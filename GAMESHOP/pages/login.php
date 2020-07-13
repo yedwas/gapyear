@@ -24,8 +24,8 @@
     <button type="submit" name="login-submit">Login</button>
     <a class="signup-link" href="signup.php">Signup</a>
   </form>
-  <form class="guest-box" action="index.php">
+  <!-- <form class="guest-box" action="index.php">
     <button type="submit" name="guest-enter">Enter as a guest</button>
-  </form>
+  </form> -->
   </body>
 </html>
