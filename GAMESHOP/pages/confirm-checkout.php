@@ -74,7 +74,7 @@
   <button type="submit" name="purchase-submit" class="purchase-submit">Confirm</button>
 </form>
 
-<form name="game-purchase" class="game-purchase" method="post" action="game-page.php">
+<form name="game-purchase" class="game-purchase" method="post" action="index.php">
   <button type="submit" name="purchase-submit" class="purchase-submit">Go Back</button>
 </form>
 
