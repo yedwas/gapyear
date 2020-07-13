@@ -39,6 +39,10 @@
    <button type="submit" name="purchase-submit" class="purchase-submit">Purchase</button>
  </form>
 
+ <form name="game-purchase" class="game-purchase" method="post" action="videogames.php">
+   <button type="submit" name="purchase-submit" class="purchase-submit">Go Back</button>
+ </form>
+
 <?php
   require "../view/footer.php";
 ?>
