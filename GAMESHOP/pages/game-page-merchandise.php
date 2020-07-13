@@ -39,7 +39,7 @@
    <button type="submit" name="purchase-submit" class="purchase-submit">Purchase</button>
  </form>
 
- <form name="game-purchase" class="game-purchase" method="post" action="videogames.php">
+ <form name="game-purchase" class="game-purchase" method="post" action="merchandise.php">
    <button type="submit" name="purchase-submit" class="purchase-submit">Go Back</button>
  </form>
 

@@ -16,7 +16,7 @@
    echo "<div class='child-page-listing'>
            <div class='grid-container'>
               <article class='game-listing'>
-              <a href='game-page-videogame.php?name=".$row['productName']."'>
+              <a href='game-page-merchandise.php?name=".$row['productName']."'>
              <p class='game-title'>
              ".$row['productName']."
              </p>
