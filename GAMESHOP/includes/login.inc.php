@@ -8,7 +8,10 @@ if (isset($_POST['login-submit'])) {
   $pwd = $_POST['pwd'];
 
   if (empty($uname) || empty($pwd)) {
-    header("Location: ../pages/login.php?error=emptyrequiredfields");
+    echo '<script type="text/javascript">';
+    echo 'alert("Fill in required fields");';
+    echo 'window.location.href = "../pages/login.php?error=emptyfields";';
+    echo '</script>';
     exit();
   }
   else {
@@ -25,7 +28,10 @@ if (isset($_POST['login-submit'])) {
       $result = mysqli_stmt_get_result($stmt);
       if ($row = mysqli_fetch_assoc($result)) {
         if (!password_verify($pwd,$row['password'])) {
-          header("Location: ../pages/login.php?error=wrongpass");
+          echo '<script type="text/javascript">';
+          echo 'alert("Wrong password or username");';
+          echo 'window.location.href = "../pages/login.php?error=wronginfo";';
+          echo '</script>';
           exit();
         }
         else if (password_verify($pwd,$row['password'])) {
@@ -37,16 +43,20 @@ if (isset($_POST['login-submit'])) {
           exit();
         }
         else {
-          header("Location: ../pages/login.php?error=wrongpassword1");
+          echo '<script type="text/javascript">';
+          echo 'alert("Wrong password or username");';
+          echo 'window.location.href = "../pages/login.php?error=wronginfo";';
+          echo '</script>';
           exit();
       }
     }
 
     else {
-    header("Location: ../pages/login.php?error=nouser");
-    exit();
-
-
+      echo '<script type="text/javascript">';
+      echo 'alert("Wrong password or username");';
+      echo 'window.location.href = "../pages/login.php?error=wronginfo";';
+      echo '</script>';
+      exit();
     }
   }
 }

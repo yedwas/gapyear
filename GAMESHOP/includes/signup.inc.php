@@ -13,10 +13,16 @@ if (isset($_POST['signup-submit'])) {
   $passwordconfirm = $_POST['password-repeat'];
 
   if (empty($username) || empty($firstname) || empty($lastname) ||empty($password) || empty($passwordconfirm)) {
-    header("Location: ../pages/signup.php?error=emptyrequiredfields&username=".$username);
-    exit();
+    echo '<script type="text/javascript">';
+    echo 'alert("Fill in required fields!");';
+    echo 'window.location.href = "../pages/signup.php?error=emptyfields";';
+    echo '</script>';
+  exit();
   } else if ($password !== $passwordconfirm) {
-    header("Location: ../pages/signup.php?error=passwordnotcorrect&username=".$username);
+    echo '<script type="text/javascript">';
+    echo 'alert("Password does not match!");';
+    echo 'window.location.href = "../pages/signup.php?error=errorpasswordcheck";';
+    echo '</script>';
     exit();
   }
   else {
@@ -34,7 +40,10 @@ if (isset($_POST['signup-submit'])) {
       mysqli_stmt_store_result($stmt);
       $resultcheck = mysqli_stmt_num_rows($stmt);
       if ($resultcheck > 0) {
-        header("Location: ../pages/signup.php?error=usernametaken");
+        echo '<script type="text/javascript">';
+        echo 'alert("Username is taken!");';
+        echo 'window.location.href = "../pages/signup.php?error=usernametaken";';
+        echo '</script>';
         exit();
       }
       else {
@@ -50,7 +59,10 @@ if (isset($_POST['signup-submit'])) {
 
           mysqli_stmt_bind_param($stmt, "ssssss", $username, $hashedPwd, $firstname, $lastname, $middlename, $suffix);
           mysqli_stmt_execute($stmt);
-          header("Location: ../pages/signup.php?signup=success");
+          echo '<script type="text/javascript">';
+          echo 'alert("Signed up successfully");';
+          echo 'window.location.href = "../pages/signup.php?success=signup";';
+          echo '</script>';
           exit();
         }
 
